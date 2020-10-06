@@ -13,7 +13,7 @@ JOB_TYPE = (
 )
 class Job (models.Model) : #Table
 
-    Title = models.CharField(max_length=10) #column
+    Title = models.CharField(max_length=100) #column
    #location
     Job_Type = models.CharField(max_length=15,choices=JOB_TYPE)
     Description = models.TextField(max_length=1000)
